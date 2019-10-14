@@ -2,7 +2,7 @@ section .text
    global _start            ;must be declared for using gcc
 	
 _start:                     ;tell linker entry point
-   mov   ax,   8h           ;getting 8 in the ax 
+   mov   ax,   9h           ;getting 8 in the ax 
    and   ax, 1              ;and ax with 1
    jz    evnn
    mov   eax, 4             ;system call number (sys_write)
