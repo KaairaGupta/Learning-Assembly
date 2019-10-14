@@ -11,7 +11,7 @@ _start:             ;tell linker entry point
    mul 	bl
    add	al, '0'
 	
-   mov 	[res], al
+   mov 	[res], al ;because al and ecx arent of the same size
    mov	ecx,msg	
    mov	edx, len
    mov	ebx,1	;file descriptor (stdout)
